@@ -85,4 +85,35 @@ $(document).ready(function() {
         $(".interest-panel").slideUp(400);
     });
 
+
+
+
+    $("#addSkill").click(function() {
+
+        let skill = $("#newSkill").val().trim();
+
+        if (skill !== "") {
+            $("#skillsList").append("<li>" + skill + "</li>");
+            $("#newSkill").val("");
+        }
+
+    });
+
+    $("#prependSkill").click(function() {
+
+        let skill = $("#newSkill").val().trim();
+
+        if (skill !== "") {
+            $("#skillsList").prepend("<li>" + skill + "</li>");
+            $("#newSkill").val("");
+        }
+
+    });
+
+    $("#removeSkill").click(function() {
+
+        $("#skillsList li:last").remove();
+
+    });
+
 });
