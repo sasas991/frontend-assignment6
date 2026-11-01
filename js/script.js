@@ -145,4 +145,24 @@ $(document).ready(function() {
 
     });
 
+
+
+
+
+    $("#nameInput").on("input", function() {
+
+        let name = $(this).val();
+
+        $("#previewName").text(name || "Not entered");
+
+    });
+
+    $("#emailInput").on("input", function() {
+
+        let email = $(this).val();
+
+        $("#previewEmail").text(email || "Not entered");
+
+    });
+
 });
