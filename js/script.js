@@ -116,4 +116,33 @@ $(document).ready(function() {
 
     });
 
+
+
+
+    $("#changeLink").click(function() {
+
+        let currentLink = $("#githubLink").attr("href");
+
+        if (currentLink === "https://github.com/sasas991") {
+
+            $("#githubLink").attr(
+                "href",
+                "https://github.com/sasas991/frontend-assignment6"
+            );
+
+            $("#githubLink").text("Visit My Repository");
+
+        } else {
+
+            $("#githubLink").attr(
+                "href",
+                "https://github.com/sasas991"
+            );
+
+            $("#githubLink").text("Visit My GitHub");
+
+        }
+
+    });
+
 });
