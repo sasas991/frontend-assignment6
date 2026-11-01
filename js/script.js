@@ -37,4 +37,19 @@ $(document).ready(function() {
         $(".navbar").css("background-color", "#262626");
     });
 
+
+
+
+    $("#hideAbout").click(function() {
+        $("#aboutDetails").hide();
+    });
+
+    $("#showAbout").click(function() {
+        $("#aboutDetails").show();
+    });
+
+    $("#toggleAbout").click(function() {
+        $("#aboutDetails").toggle();
+    });
+
 });
