@@ -165,4 +165,41 @@ $(document).ready(function() {
 
     });
 
+
+
+
+    let skillsAnimated = false;
+
+    $("#animateSkills").click(function() {
+
+        if (!skillsAnimated) {
+
+            $(".skill-fill").each(function() {
+
+                let targetWidth = $(this).attr("data-width");
+
+                $(this).stop().animate({
+                    width: targetWidth
+                }, 1500);
+
+            });
+
+            skillsAnimated = true;
+
+            $("#animateSkills").text("Reset Skills");
+
+        } else {
+
+            $(".skill-fill").stop().animate({
+                width: "0%"
+            }, 1500);
+
+            skillsAnimated = false;
+
+            $("#animateSkills").text("Animate My Skills");
+
+        }
+
+    });
+
 });
