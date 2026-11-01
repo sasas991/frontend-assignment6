@@ -69,4 +69,20 @@ $(document).ready(function() {
         $(".gallery-images img").fadeToggle(600);
     });
 
+
+
+
+
+    $(".interest-title").click(function() {
+        $(this).next(".interest-panel").slideToggle(400);
+    });
+
+    $("#expandAll").click(function() {
+        $(".interest-panel").slideDown(400);
+    });
+
+    $("#collapseAll").click(function() {
+        $(".interest-panel").slideUp(400);
+    });
+
 });
