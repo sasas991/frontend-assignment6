@@ -52,4 +52,21 @@ $(document).ready(function() {
         $("#aboutDetails").toggle();
     });
 
+
+
+
+
+
+    $("#fadeIn").click(function() {
+        $(".gallery-images img").fadeIn(600);
+    });
+
+    $("#fadeOut").click(function() {
+        $(".gallery-images img").fadeOut(600);
+    });
+
+    $("#fadeToggle").click(function() {
+        $(".gallery-images img").fadeToggle(600);
+    });
+
 });

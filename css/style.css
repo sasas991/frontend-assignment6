@@ -106,3 +106,47 @@ button:hover {
 .about-buttons {
     margin-top: 20px;
 }
+
+
+
+
+
+#gallery {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-description {
+    margin-bottom: 35px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-item h3 {
+    margin-top: 12px;
+}
+
+.gallery-buttons {
+    margin-top: 25px;
+}
